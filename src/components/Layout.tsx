@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Facebook, Instagram, Youtube, Music } from 'lucide-react';
@@ -11,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
   
   const navigation = [
-    { name: 'HOME', path: '/' },
+    { name: 'HOME', path: '/home' },
     { name: 'PROFILE', path: '/profile' },
     { name: 'CONCERTS', path: '/concerts' },
     { name: 'VIDEOS', path: '/videos' },
@@ -215,7 +214,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/home" className="flex items-center space-x-3">
               <div className="w-12 h-12 rounded-xl shadow-xl overflow-hidden">
                 <img 
                   src="/lovable-uploads/2a99a969-995c-49f2-aade-403931b27a21.png"
