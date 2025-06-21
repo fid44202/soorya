@@ -58,9 +58,92 @@ const Layout = ({ children }: LayoutProps) => {
         `
       }}></div>
 
-      {/* Floral border decorations */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none overflow-hidden">
-        {/* Top border floral pattern */}
+      {/* Enhanced Musical Notes Background */}
+      <div className="absolute inset-0 opacity-15 pointer-events-none overflow-hidden">
+        {/* Scattered musical notes throughout the background */}
+        <div className="absolute top-12 left-8 transform -rotate-12">
+          <svg width="30" height="45" viewBox="0 0 30 45" fill="none" className="text-amber-800">
+            <circle cx="6" cy="37" r="5" fill="currentColor"/>
+            <rect x="11" y="8" width="1.5" height="29" fill="currentColor"/>
+            <path d="M12.5 8c4 0 8 1 8 5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute top-24 right-16 transform rotate-20">
+          <svg width="28" height="40" viewBox="0 0 28 40" fill="none" className="text-orange-800">
+            <circle cx="5" cy="32" r="4" fill="currentColor"/>
+            <rect x="9" y="6" width="1.5" height="26" fill="currentColor"/>
+            <path d="M10.5 6c3 0 6 1 6 4" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute top-40 left-20 transform rotate-8">
+          <svg width="32" height="48" viewBox="0 0 32 48" fill="none" className="text-yellow-800">
+            <circle cx="7" cy="40" r="5" fill="currentColor"/>
+            <rect x="12" y="10" width="1.5" height="30" fill="currentColor"/>
+            <path d="M13.5 10c4 0 8 1 8 5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute top-60 right-32 transform -rotate-15">
+          <svg width="26" height="38" viewBox="0 0 26 38" fill="none" className="text-amber-900">
+            <circle cx="5" cy="30" r="4" fill="currentColor"/>
+            <rect x="9" y="6" width="1.5" height="24" fill="currentColor"/>
+            <path d="M10.5 6c3 0 6 1 6 4" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute top-80 left-16 transform rotate-25">
+          <svg width="35" height="50" viewBox="0 0 35 50" fill="none" className="text-orange-700">
+            <circle cx="8" cy="42" r="6" fill="currentColor"/>
+            <rect x="14" y="12" width="2" height="30" fill="currentColor"/>
+            <path d="M16 12c5 0 10 1 10 6" stroke="currentColor" strokeWidth="2" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute bottom-40 left-12 transform -rotate-10">
+          <svg width="45" height="65" viewBox="0 0 45 65" fill="none" className="text-yellow-800">
+            <path d="M15 15c-6 0-10 6-10 12s3 12 10 12c3 0 6-1 6-4s-1-4-3-4c-1 0-3 1-3 3M15 15V5c0-3 3-6 6-6s6 3 6 6-3 6-6 6M15 39v12c0 3-2 6-5 6s-5-3-5-6 2-6 5-6" stroke="currentColor" strokeWidth="2" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute bottom-60 right-20 transform rotate-18">
+          <svg width="40" height="30" viewBox="0 0 40 30" fill="none" className="text-amber-900">
+            <circle cx="6" cy="24" r="3" fill="currentColor"/>
+            <circle cx="20" cy="20" r="3" fill="currentColor"/>
+            <circle cx="34" cy="16" r="3" fill="currentColor"/>
+            <rect x="9" y="8" width="1" height="16" fill="currentColor"/>
+            <rect x="23" y="4" width="1" height="16" fill="currentColor"/>
+            <rect x="37" y="0" width="1" height="16" fill="currentColor"/>
+            <path d="M10 8c6 0 12-1 14-3M24 4c6 0 12-1 14-3" stroke="currentColor" strokeWidth="1"/>
+          </svg>
+        </div>
+
+        <div className="absolute top-32 left-1/3 transform rotate-12">
+          <svg width="22" height="35" viewBox="0 0 22 35" fill="none" className="text-orange-800">
+            <circle cx="4" cy="28" r="3.5" fill="currentColor"/>
+            <rect x="7.5" y="5" width="1.5" height="23" fill="currentColor"/>
+            <path d="M9 5c3 0 6 1 6 4" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute bottom-32 left-1/2 transform -rotate-8">
+          <svg width="38" height="55" viewBox="0 0 38 55" fill="none" className="text-yellow-700">
+            <circle cx="7" cy="47" r="5.5" fill="currentColor"/>
+            <rect x="12.5" y="15" width="2" height="32" fill="currentColor"/>
+            <path d="M14.5 15c5 0 10 1 10 6" stroke="currentColor" strokeWidth="2" fill="none"/>
+          </svg>
+        </div>
+
+        <div className="absolute top-72 right-8 transform rotate-22">
+          <svg width="24" height="36" viewBox="0 0 24 36" fill="none" className="text-amber-700">
+            <circle cx="5" cy="29" r="4" fill="currentColor"/>
+            <rect x="9" y="7" width="1.5" height="22" fill="currentColor"/>
+            <path d="M10.5 7c3 0 6 1 6 4" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        {/* Floral border decorations */}
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-amber-800/10 to-transparent">
           <svg className="absolute top-2 left-8 w-16 h-16 text-amber-800" viewBox="0 0 100 100">
             <path d="M50 10c-8 8-16 16-8 24 8-8 16-16 8-24z" fill="currentColor" opacity="0.6"/>
@@ -133,11 +216,15 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-amber-900 to-orange-900 text-white p-3 rounded-xl shadow-xl">
-                <Music className="w-8 h-8" />
+              <div className="w-12 h-12 rounded-xl shadow-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/2a99a969-995c-49f2-aade-403931b27a21.png"
+                  alt="Soorya Gayathri Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
-                <h1 className="text-3xl font-bold text-amber-900 font-serif">Sooryagayathri</h1>
+                <h1 className="text-3xl font-bold text-amber-900 font-serif">Soorya Gayathri</h1>
                 <p className="text-sm text-amber-800 font-medium">Traditional Bhajan Singer</p>
               </div>
             </Link>
@@ -207,7 +294,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 text-center md:text-left">
-              <p className="text-amber-100 font-medium">&copy; 2024 Sooryagayathri. All rights reserved.</p>
+              <p className="text-amber-100 font-medium">&copy; 2024 Soorya Gayathri. All rights reserved.</p>
               <p className="text-sm text-amber-200">Traditional Devotional Music & Spiritual Journey</p>
             </div>
             <div className="flex space-x-6">
