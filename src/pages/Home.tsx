@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import Modal from '../components/Modal';
+import AutoChangingImages from '../components/AutoChangingImages';
 import { Play, Calendar, MapPin } from 'lucide-react';
 
 const Home = () => {
@@ -22,30 +22,9 @@ const Home = () => {
         <section className="relative py-20 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Content */}
-              <div className="text-left space-y-6">
-                <div className="space-y-4">
-                  <h1 className="text-5xl md:text-6xl font-bold text-amber-900 font-serif leading-tight">
-                    Traditional<br />
-                    <span className="text-orange-900">Bhajan Singer</span>
-                  </h1>
-                  
-                  <div className="max-w-md">
-                    <p className="text-lg text-amber-900 leading-relaxed mb-6">
-                      This is Soorya Gayathri sings latest songs from her divine collection of traditional 
-                      bhajans and devotional melodies that touch the soul.
-                    </p>
-                    
-                    <p className="text-base text-amber-800 leading-relaxed mb-8">
-                      Experience the spiritual journey through music that connects hearts 
-                      with the divine essence of devotional singing.
-                    </p>
-                  </div>
-                  
-                  <button className="bg-gradient-to-r from-amber-900 to-orange-900 hover:from-amber-800 hover:to-orange-800 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
-                    Listen Now
-                  </button>
-                </div>
+              {/* Left Content - Auto Changing Images */}
+              <div className="flex justify-center">
+                <AutoChangingImages />
               </div>
 
               {/* Right Image */}
